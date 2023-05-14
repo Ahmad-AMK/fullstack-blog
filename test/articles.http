@@ -1,0 +1,38 @@
+get http://localhost:3000/articles
+Content-Type: application/json
+
+###
+
+get http://localhost:3000/articles/1
+Content-Type: application/json
+
+###
+
+post http://localhost:3000/articles
+Content-Type: application/json
+
+{
+    "titre":"disque dur HDD",
+    "content":"1TB",
+    "image":"HDD.png",
+    "userId":1
+    
+}
+
+###
+
+patch http://localhost:3000/articles/1
+Content-Type: application/json
+
+{
+    "titre":"disque dur HDD",
+    "content":"2TB",
+    "image":"HDD2.png",
+    "userId":1
+}
+
+
+###
+
+delete http://localhost:3000/articles/2
+Content-Type: application/json

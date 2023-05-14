@@ -1,0 +1,36 @@
+get http://localhost:3000/commentaires
+Content-Type: application/json
+
+###
+
+get http://localhost:3000/commentaires/1
+Content-Type: application/json
+
+###
+
+post http://localhost:3000/commentaires
+Content-Type: application/json
+
+{
+    "email":"sanaa@gmail.com",
+    "content":"tst test",
+    "articleId":3
+    
+}
+
+###
+
+patch http://localhost:3000/commentaires/1
+Content-Type: application/json
+
+{
+    "email":"jihane_ji@gmail.com",
+    "content":"adorable",
+    "articleId":1
+}
+
+
+###
+
+delete http://localhost:3000/commentaires/2
+Content-Type: application/json

@@ -1,0 +1,45 @@
+GET http://localhost:3000/users
+###
+
+GET http://localhost:3000/users/10
+
+###
+POST http://localhost:3000/users
+Content-type: application/json 
+
+{
+    "nom" : "Ahmed-Younes",
+    "email" : "ahmed@gmail.com",
+    "role" : "ADMIN",
+    "password" : "abcdef"
+
+}
+
+###
+
+PATCH http://localhost:3000/users/1
+Content-type: application/json 
+
+{
+    "nom" : "Ahmed-Younes",
+    "email" : "ahmedyounes@gmail.com"
+
+}
+
+
+###
+
+delete http://localhost:3000/users/11
+Content-Type: application/json
+###
+
+post http://localhost:3000/auth
+Content-type: application/json 
+
+{
+    "nom" : "Ahmed-Younes",
+    "email" : "ahmedyounes@gmail.com",
+    "role" : "ADMIN",
+    "password" : "password111"
+
+}

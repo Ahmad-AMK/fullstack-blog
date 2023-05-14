@@ -1,0 +1,32 @@
+get http://localhost:3000/categories
+Content-Type: application/json
+
+###
+
+get http://localhost:3000/categories/1
+Content-Type: application/json
+
+###
+
+post http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "nom":"Fashion"
+    
+}
+
+###
+
+patch http://localhost:3000/categories/1
+Content-Type: application/json
+
+{
+    "nom":"Beauty"
+}
+
+
+###
+
+delete http://localhost:3000/categories/2
+Content-Type: application/json
