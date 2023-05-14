@@ -1,1 +1,1 @@
-# projet web de la fin du module
+Fullstack blog app built using Nodejs/Prisma and vanilla Javascript
